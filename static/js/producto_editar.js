@@ -1,6 +1,7 @@
 console.log(location.search)     // lee los argumentos pasados a este formulario
 var id=location.search.substr(4)  // producto_update.html?id=1
 console.log(id)
+var elementos = []
 const { createApp } = Vue
   createApp({
     data() {
@@ -58,3 +59,6 @@ const { createApp } = Vue
         this.fetchData(this.url)
     },
   }).mount('#app')
+
+var elementos = []
+
