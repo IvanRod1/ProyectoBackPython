@@ -3,10 +3,9 @@ const { createApp } = Vue
     data() {
       return {
         productos:[],
-        url:'http://ivanrod.pythonanywhere.com/productos',   // si ya lo subieron a pythonanywhere
+        url:'http://ivanrod.pythonanywhere.com/productos',   
         error:false,
         cargando:true,
-        /*atributos para el guardar los valores del formulario */
         id:0,
         nombre:"", 
         imagen:"",
@@ -33,10 +32,10 @@ const { createApp } = Vue
             method: 'DELETE',
         }
         fetch(url, options)
-            .then(res => res.text()) // or res.json()
+            .then(res => res.text()) 
             .then(res => {
          alert('Registro Eliminado')
-                location.reload(); // recarga el json luego de eliminado el registro
+                location.reload(); 
             })
     },
     grabar(){
